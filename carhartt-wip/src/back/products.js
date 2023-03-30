@@ -108,3 +108,10 @@ const Products = [
         stock: 100,
     },
 ]
+
+export const getProducts = () => {
+    return new Promise((resolve, reject) => {
+      resolve(Products),
+      reject(new Error("Error"))
+    });
+  }
